@@ -1,0 +1,29 @@
+{
+    "name": "pierreminiggio/github-action-remotion-renderer",
+    "description": "",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pierre MINIGGIO",
+            "email": "pierre@miniggiodev.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0",
+        "pierreminiggio/github-action-run-starter-and-artifact-downloader": "9999999-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "PierreMiniggio\\GithubActionRemotionRenderer\\": "src/",
+            "PierreMiniggio\\GithubActionRemotionRendererTest\\": "tests/"
+        }
+    },
+    "scripts": {},
+    "scripts-descriptions": {
+        "test": "Run all tests!"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
+}
