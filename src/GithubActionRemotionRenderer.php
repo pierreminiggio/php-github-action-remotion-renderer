@@ -21,9 +21,9 @@ class GithubActionRemotionRenderer
     /**
      * @param array<string, mixed> $inputs
      * @param int $refreshTime in seconds
-     * 
+     *
      * @return string video's file paths
-     * 
+     *
      * @throws GithubActionRemotionRendererException
      */
     public function render(
@@ -56,5 +56,10 @@ class GithubActionRemotionRenderer
         }
 
         return $files[0];
+    }
+
+    public function getRunnerAndDownloader(): GithubActionRunStarterAndArtifactDownloader
+    {
+        return $this->runnerAndDownloader;
     }
 }
